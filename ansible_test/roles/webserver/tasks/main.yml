@@ -1,0 +1,13 @@
+---
+# tasks file for webserver
+- name: Install apache2
+  apt:
+    name: apache2
+    state: present
+    update_cache: yes
+- name: Insert index.html
+  copy:
+    src: index.html
+    dest: /var/www/html
+    owner: root
+    mode: '0444'
