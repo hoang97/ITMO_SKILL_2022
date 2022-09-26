@@ -5,9 +5,9 @@ from main import *
 class TestMain(unittest.TestCase):
 
     def test_factors(self):
-        self.assertEqual(set(factors(2)), {2})
-        self.assertEqual(set(factors(18)), {2,3,6,9,18})
-        self.assertEqual(set(factors(21)), {3,7,21})
+        self.assertEqual(set(factors(2)), {1,2})
+        self.assertEqual(set(factors(18)), {1,2,3,6,9,18})
+        self.assertEqual(set(factors(21)), {1,3,7,21})
 
     def test_prime(self):
         self.assertFalse(is_prime(1))
