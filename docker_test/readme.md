@@ -28,4 +28,4 @@ Manage Docker microservices
 
 ## Verification
 
-    ![result](docker_2.png)
+![result](docker_2.png)
